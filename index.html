@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="./imgs/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Maiia Games</title>
+    <style>
+        /* Reset e base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+		font-family: 'Roboto', sans-serif;
+		font-Size: 16px;
+		background-color: #f4f4f4;
+		color: #333;
+		scrollbar-width: none;       /* Firefox */
+		-ms-overflow-style: none;    /* IE e Edge */
+        }
+	body::-webkit-scrollbar {
+	    display: none;               /* Chrome, Safari e Opera */
+	}
+        /* Slider de banners */
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slides img {
+            width: 100vw;
+            height: 200px;
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .banner img {
+            width: 900px;
+            height: 230px;
+        }
+
+        /* Containers principais */
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .games-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .game {
+            display: flex;
+            flex-direction: row;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 24px;
+            max-width: 700px;
+        }
+
+        .game img {
+            width: 210px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 15px;
+            object-fit: contain;
+        }
+        
+        .div-description {
+          display: flex;
+          flex-direction: column;
+          margin: auto;
+        }
+
+        .game-description,
+        .game-details p {
+            text-align: justify;
+            width: 300px;
+        
+        }
+
+        .game-details p {
+            margin-bottom: 10px;
+        }
+       .game-details span {
+            font-Size: 12px;
+            font-weight: 600;
+        }
+
+	.about {
+	    margin-top: 30px;
+	    font-size: 1.2rem;
+	    display: flex;
+	    justify-content: center;
+	}
+
+	.about p {
+	    max-width: 800px;
+	    text-align: justify;
+	}
+
+
+        @media (max-width: 768px) {
+            .game {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .game img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Primeira linha: Slider -->
+    <div class="slider">
+        <div class="banner">
+            <img src="./imgs/logo.png" alt="Jogo 1">
+        </div>
+    </div>
+
+    <!-- Segunda linha: Jogos -->
+    <div class="container games-info">
+        <!-- Card repetido 4 vezes para exemplo -->
+        <div class="game">
+            <img src="./imgs/ballsortchallenge.png" alt="Ball Sort Challenge">
+            <div class="div-description">
+                <h3 style="margin-top: 20px;">Ball Sort Challenge</h3><br>
+                <p class="game-description">
+                    The logic and organization game to pass the time! With 100 incredible levels, customize your experience by choosing between different background themes, tube styles and balls!
+                </p><br>
+                <div class="game-details">
+                    <p><span>CHALLENGE AND FUN:</span> Sort the balls by color, beat the clock and relax at the same time.</p>
+                    <p><span>100 UNIQUE LEVELS:</span> Each with its own difficulty.</p>
+                    <p><span>CUSTOMIZATION:</span> Themes, tubes and balls!</p>
+                    <p><span>TRAIN YOUR MIND:</span> Improve your skills.</p>
+                    <p><span>OFFLINE PLAY:</span> No internet required.</p>
+										<p>				
+											<span>PRIVACY POLICY:</span>						
+											<a style="text-align: center; font-size:14px;" href="./docs/docPrivacyPoly_en.html"
+											 target="_blank" rel="noopener noreferrer">
+												 Privacy Policy 
+											</a>
+										</p>
+										<p style="text-align: left; margin-top: 20px;">
+											<a href="https://play.google.com/store/apps/details?id=com.solar2d.carlos.BallSortChallenge" target="_blank">
+												<img alt="Disponível no Google Play" 
+														 src="https://play.google.com/intl/pt-BR/badges/static/images/badges/pt-br_badge_web_generic.png" 
+														 style="height: 60px;" />
+											</a>
+										</p>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Clone para preencher layout -->
+        <div class="game">
+            <img src="./imgs/embreve.png" alt="Ball Sort Challenge">
+            <div>
+                <h3></h3><br>
+                <p class="game-description">
+
+                </p><br>
+                <div class="game-details">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Clone 3 
+        <div class="game">
+            <img src="./imgs/ballsortchallenge.png" alt="Ball Sort Challenge">
+              <div class="div-description">
+                <h3>Ball Sort Challenge</h3><br>
+                <p class="game-description">
+                    The logic and organization game to pass the time! With 100 incredible levels, customize your experience by choosing between different background themes, tube styles and balls!
+                </p><br>
+                <div class="game-details">
+                    <p><b>CHALLENGE AND FUN:</b> Sort the balls by color, beat the clock and relax at the same time.</p>
+                    <p><b>100 UNIQUE LEVELS:</b> Each with its own difficulty.</p>
+                    <p><b>FULL CUSTOMIZATION:</b> Themes, tubes and balls!</p>
+                    <p><b>TRAIN YOUR MIND:</b> Improve your skills.</p>
+                    <p><b>OFFLINE PLAY:</b> No internet required.</p>
+                </div>
+            </div>
+        </div>-->
+
+        <!-- Clone 4 
+        <div class="game">
+            <img src="./imgs/ballsortchallenge.png" alt="Ball Sort Challenge">
+              <div class="div-description">
+                <h3>Ball Sort Challenge</h3><br>
+                <p class="game-description">
+                    The logic and organization game to pass the time! With 100 incredible levels, customize your experience by choosing between different background themes, tube styles and balls!
+                </p><br>
+                <div class="game-details">
+                    <p><b>CHALLENGE AND FUN:</b> Sort the balls by color, beat the clock and relax at the same time.</p>
+                    <p><b>100 UNIQUE LEVELS:</b> Each with its own difficulty.</p>
+                    <p><b>FULL CUSTOMIZATION:</b> Themes, tubes and balls!</p>
+                    <p><b>TRAIN YOUR MIND:</b> Improve your skills.</p>
+                    <p><b>OFFLINE PLAY:</b> No internet required.</p>
+                </div>
+            </div>
+        </div>-->
+    </div>
+
+    <!-- Terceira linha: Sobre -->
+    <div class="container about">
+				<p style="text-align: center;">
+					Olá! Sou um simples desenvolvedor de jogos.<br>
+					Obrigado por visitar!
+				</p>
+    </div>
+
+    <script>
+        // Slider automático (caso você reative as imagens na div .slides)
+        let currentIndex = 0;
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slides img').length;
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }, 3000);
+    </script>
+
+</body>
+</html>
