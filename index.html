@@ -136,6 +136,57 @@
                 margin-bottom: 10px;
             }
         }
+
+	  form {
+    background: #fff;
+    padding: 30px 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    border: 1.8px solid #ccd6df;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+  }
+
+  form input[type="text"]:focus,
+  form input[type="email"]:focus,
+  form textarea:focus {
+    border-color: #2a9df4;
+    outline: none;
+  }
+
+  form textarea {
+    min-height: 100px;
+    font-family: inherit;
+  }
+
+  form button {
+    background-color: #2a9df4;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+  }
+
+  form button:hover {
+    background-color: #2382d6;
+  }
     </style>
 </head>
 <body>
@@ -241,7 +292,17 @@
 					Obrigado por visitar!
 				</p>
     </div>
+<p>
+<form action="https://formsubmit.co/94836da1777579c53417c58d1415c646" method="POST">
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="text" name="_honey" style="display:none" />
 
+  <input type="text" name="name" placeholder="Seu nome" required />
+  <input type="email" name="email" placeholder="Seu e-mail" required />
+  <textarea name="message" placeholder="Sua mensagem" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
+</p>
     <script>
         // Slider automático (caso você reative as imagens na div .slides)
         let currentIndex = 0;
